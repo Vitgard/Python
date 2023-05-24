@@ -17,10 +17,10 @@ a6 = a % 10
 s1 = a1 + a2 + a3
 s2 = a4 + a5 + a6
 if s1 == s2:
-    print("yes")
+    print("YES")
 
 else:
-    print("no")
-    
+    print("NO")
+
     
 
