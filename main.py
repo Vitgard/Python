@@ -27,9 +27,22 @@
 # else:
 #     print('NO')
 
-    
-i = input("Введите трехзначное число: ")
-print(int(i[0])+int(i[1])+int(i[2]))
+# list_1 = [(i, i * i) for i in range(1, 11) if i % 2 == 0]
+# print(list_1)
+
+# n = int(input())
+# result = 1
+# while n != 1:
+#     result *= n
+#     n -= 1
+# print(result)
+
+
+
+
+
+
+
 
 
 
