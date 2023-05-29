@@ -37,6 +37,26 @@
 #     n -= 1
 # print(result)
 
+# n = [{"V":"S001"},{"V":"S002"},{"VI":"S001"},{"VI":"S005"}]
+# values = set()
+# for i in n:
+#     values.add(list(i.values())[0])
+#     for key in i:
+#         values.add(i[key])
+# print(values)
+data = [int(i) for i in input("Введите числа: ").split()]
+count = 0
+for i in range(len(data) - 1):
+    if data[i + 1] > data[i]:
+        count += 1
+print(count)
+
+
+
+
+
+
+
 
 
 
