@@ -44,12 +44,20 @@
 #     for key in i:
 #         values.add(i[key])
 # print(values)
-data = [int(i) for i in input("Введите числа: ").split()]
-count = 0
-for i in range(len(data) - 1):
-    if data[i + 1] > data[i]:
-        count += 1
-print(count)
+# data = [int(i) for i in input("Введите числа: ").split()]
+# count = 0
+# for i in range(len(data) - 1):
+#     if data[i + 1] > data[i]:
+#         count += 1
+# print(count)
+
+n = int(input())
+max_number = 1000
+while n != 0:
+    n = int(input())
+    if max_number > n:
+        max_number = n
+print(max_number)
 
 
 
