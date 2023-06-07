@@ -51,14 +51,28 @@
 #         count += 1
 # print(count)
 
-n = int(input())
-max_number = 1000
-while n != 0:
-    n = int(input())
-    if max_number > n:
-        max_number = n
-print(max_number)
+# n = int(input())
+# max_number = 1000
+# while n != 0:
+#     n = int(input())
+#     if max_number > n:
+#         max_number = n
+# print(max_number)
 
+
+# import modul1
+# print (modul1.max (5, 9))
+
+def fib(n):
+    if n in [1, 2]:
+        return 1
+    return fib(n - 1) + fib(n - 2)
+# list_1 = []
+# for i in range(1, 10):
+#     list_1.append(fib(i))
+# print(list_1)
+n = int(input("Введите номер числа Фибоначе: "))
+print(fib(n))
 
 
 
