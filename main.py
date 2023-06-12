@@ -63,16 +63,35 @@
 # import modul1
 # print (modul1.max (5, 9))
 
-def fib(n):
-    if n in [1, 2]:
-        return 1
-    return fib(n - 1) + fib(n - 2)
+# def fib(n):
+#     if n in [1, 2]:
+#         return 1
+#     return fib(n - 1) + fib(n - 2)
 # list_1 = []
 # for i in range(1, 10):
 #     list_1.append(fib(i))
 # print(list_1)
-n = int(input("Введите номер числа Фибоначе: "))
-print(fib(n))
+# n = int(input("Введите номер числа Фибоначе: "))
+# print(fib(n))
+
+# n = int(input("Введите количество элементов n: "))
+# array_1 = [int(i) for i in input().split()][:n]
+# m = int(input("Введите количество элементов m: "))
+# array_2 = [int(i) for i in input().split()][:m]
+# for i in array_1:
+#     if i not in array_2:
+#         print(i, end=' ')
+
+n = int(input("Введите количество элементов: "))
+array_1 = [int(i) for i in input().split()][:n]
+count = 0
+result = {}
+for i in array_1:
+    if i in result:
+        result[i] += 1
+    else:
+        result[i] = 1
+print(sum([i // 2 for i in result.values()]))
 
 
 
