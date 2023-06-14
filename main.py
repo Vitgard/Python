@@ -82,18 +82,24 @@
 #     if i not in array_2:
 #         print(i, end=' ')
 
-n = int(input("Введите количество элементов: "))
-array_1 = [int(i) for i in input().split()][:n]
-count = 0
-result = {}
-for i in array_1:
-    if i in result:
-        result[i] += 1
-    else:
-        result[i] = 1
-print(sum([i // 2 for i in result.values()]))
+# n = int(input("Введите количество элементов: "))
+# array_1 = [int(i) for i in input().split()][:n]
+# count = 0
+# result = {}
+# for i in array_1:
+#     if i in result:
+#         result[i] += 1
+#     else:
+#         result[i] = 1
+# print(sum([i // 2 for i in result.values()]))
 
+def find_otbit(orbits):
+    orbits_max = [(pol[0] * pol[1] if pol[0] != pol[1] else 0) for pol in orbits]
+    #print(max(orbits_max))
+    return orbits[orbits_max.index(max(orbits_max))]
 
+orbits = [(1, 3), (2.5, 10), (7, 2), (6, 6), (4, 3)]
+print(*find_otbit(orbits))
 
 
 
