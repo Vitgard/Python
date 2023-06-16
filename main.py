@@ -93,17 +93,26 @@
 #         result[i] = 1
 # print(sum([i // 2 for i in result.values()]))
 
-def find_otbit(orbits):
-    orbits_max = [(pol[0] * pol[1] if pol[0] != pol[1] else 0) for pol in orbits]
-    #print(max(orbits_max))
-    return orbits[orbits_max.index(max(orbits_max))]
+# def find_otbit(orbits):
+#     orbits_max = [(pol[0] * pol[1] if pol[0] != pol[1] else 0) for pol in orbits]
+#     #print(max(orbits_max))
+#     return orbits[orbits_max.index(max(orbits_max))]
 
-orbits = [(1, 3), (2.5, 10), (7, 2), (6, 6), (4, 3)]
-print(*find_otbit(orbits))
+# orbits = [(1, 3), (2.5, 10), (7, 2), (6, 6), (4, 3)]
+# print(*find_otbit(orbits))
 
+# database = open ('data.txt', 'r', encoding='utf-8')
+# print(database. readlines())
 
+# with open ('data.txt', 'r', encoding='utf-8') as database: 
+#     print(database. readlines())
 
+# with open ('data.txt', 'a', encoding='utf-8') as database: 
+#     database.write("\nОшеров Алексей")
 
+with open ('C:/Users/Vitgard/Desktop/PYTHON KURS/data.txt', 'w', encoding='utf-8') as database: 
+    database.write("Алексей;Ошеров;77023499086\n")
+    
 
 
 
